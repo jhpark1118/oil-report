@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전쟁과 유가 변동 분석 보고서</title>
+<script type="text/javascript" nonce="1ded087a30114478a3f03652a5a" src="//local.adguard.org?ts=1773810120322&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2Fe9dcd90ff02f714eb515979da13b8a63%2Fbc1166e3-b6c7-4910-9500-fbcc4919f1a2%2Fd636eabe.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253Doil-price-report.html%253B%2520filename%252A%253DUTF-8%2527%2527oil-price-report.html%26AWSAccessKeyId%3DASIA2F3EMEYEW6DKLLAU%26Signature%3D8nKhWtxukrtJensJn1XBOVT2E48%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEDYaCXVzLWVhc3QtMSJIMEYCIQCPtX0hxDG5W8qNcEdwDVoUuENrE6D1zsVwD%252FpIfaenpAIhAKsNv0UFuKJTGmnDgKnwr2DHVgOKa%252FSoav%252Fv0epXLgKxKvwECP%252F%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwEQARoMNjk5NzUzMzA5NzA1IgxFNjGgiO%252B6g4MH2nIq0ASxqfGw0boKaLXUsk%252FjcFH7yrb4%252FsTnfTH96VG7ImZIxpIBU2cPSaIcc7UVdKNl%252BByvimwlNSjzN76R1b7DhlIFjxa%252FjCouqM8FMfOiJmsiiQCb60YCLTbqRn9JjMT3HFx6neR3ziVvIbzRSCeaN1dIkx0Jpe%252FzFovmOJNk7QVuvIBizmJOcBQpdqp4xHVQDVkFYD8d6ipNSAQpC5ORu%252F4EOzWqqM00EjlQ07TDofRGn60Q6B2Be7aGzW0U2u5PJjqk%252FoxNaC5YBOkQarPMjNLonoVBs4D9lFqoYnF6rnvE%252Fch5m%252BpWyzJr4TV5NKwmy4Q74bjYJZU65JHuRE63gr733Qd2AlmDnqRMEayL94vo7BZUkR%252BWkOwbFH5zrX2tksQHoyDrvwBPm3IUzTyO%252BMtAxAOpiV2bEIRxgpCI4OR6jO7FAkeZXDgqVScakv7YZiYAJKw8CYttOP9gMoeTdTnmNThlD3quCePFejk0M1Kin18HRdNbZqwhEfAKn15i%252FCAum7rA6Khb7pKzhL6unKHWPkSljsz1xA7QP7lKyfJ58zbUj9k6uvV4CESKr%252Fo2Jvtuy8yaiS7HYRDLXi82SY6OQiVG2T85vlcs87KQkuP6N62FpT1WR1JMzt%252F089M7arAiabfMFGRxAHGBTYh%252Bha1kIZjVnU1uSdG49Uco1NZrU9S7gBUPdSsslSuwqXrUbrvDoCEtBxA%252Fb7HD1Ys4G8gVcw1emHYVn%252ByRMB%252FO%252F18mxp9V1t2UNtA6Yge2549oTZvJrsDCEvdrxO5s%252BEpIF0rSMKH%252F6M0GOpcB1a99uO%252Fqkpg9lT721I0lhq%252FLaMceHtkTHivDcETOIJ%252BGmTBFrQVtcNAvD7X%252F%252BbYt7C1ZlIXFw74UpjK%252FNdWwptjZgydIGFYKspV%252B872Y4g6ahuzq8zlbwrKOVYQ0xf%252Bodu91CW1W6si12dPoqY0mEqwaPb2WvM9UOpXniHLH%252FrlYqAbl5nadqn7%252B5dLZnMe%252BYjL6qCmCCA%253D%253D%26Expires%3D1773815105&amp;app=comet.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-loc&amp;st-dnt"></script><script type="text/javascript" nonce="1ded087a30114478a3f03652a5a" src="//local.adguard.org?ts=1773810120322&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./data.js"></script>
+<style>
+/* ── TOKENS ── */
+:root,[data-theme="light"]{
+  --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;
+  --color-surface-offset:#f0ede8;--color-divider:#dcd9d5;--color-border:#d4d1ca;
+  --color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;
+  --color-primary:#01696f;--color-primary-hover:#0c4e54;
+  --color-primary-highlight:#cedcd8;
+  --color-warning:#964219;--color-error:#a13544;--color-success:#437a22;
+  --color-gold:#d19900;
+  --shadow-sm:0 1px 2px oklch(0.2 0.01 80/.06);
+  --shadow-md:0 4px 12px oklch(0.2 0.01 80/.08);
+  --shadow-lg:0 12px 32px oklch(0.2 0.01 80/.12);
+  --radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;
+  --radius-full:9999px;
+  --transition:180ms cubic-bezier(0.16,1,0.3,1);
+  --font-body:'Noto Sans KR',sans-serif;
+  --font-display:'Noto Serif KR',serif;
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
+  --space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;
+  --space-16:4rem;--space-20:5rem;
+  --content-narrow:640px;--content-default:960px;--content-wide:1200px;
+}
+[data-theme="dark"]{
+  --color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;
+  --color-surface-offset:#1d1c1a;--color-divider:#262523;--color-border:#393836;
+  --color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;
+  --color-primary:#4f98a3;--color-primary-hover:#227f8b;
+  --color-primary-highlight:#313b3b;
+  --color-warning:#bb653b;--color-error:#dd6974;--color-success:#6daa45;
+  --color-gold:#e8af34;
+  --shadow-sm:0 1px 2px oklch(0 0 0/.2);
+  --shadow-md:0 4px 12px oklch(0 0 0/.3);
+  --shadow-lg:0 12px 32px oklch(0 0 0/.4);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){
+  --color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;
+  --color-surface-offset:#1d1c1a;--color-divider:#262523;--color-border:#393836;
+  --color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;
+  --color-primary:#4f98a3;--color-primary-hover:#227f8b;
+}}
+
+/* ── BASE ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:var(--space-16)}
+body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);
+  color:var(--color-text);background:var(--color-bg);line-height:1.7}
+img,svg{display:block;max-width:100%}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.2;font-family:var(--font-display)}
+p,li{text-wrap:pretty;max-width:72ch}
+table{border-collapse:collapse;width:100%}
+a,button,[role="button"]{transition:color var(--transition),background var(--transition),
+  border-color var(--transition),box-shadow var(--transition)}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+
+/* ── LAYOUT ── */
+.container{max-width:var(--content-wide);margin-inline:auto;padding-inline:var(--space-6)}
+.container--narrow{max-width:var(--content-default)}
+
+/* ── HEADER / NAV ── */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--color-surface);
+  border-bottom:1px solid oklch(from var(--color-text) l c h / .08);
+  box-shadow:var(--shadow-sm);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-block:var(--space-3);gap:var(--space-4)
+}
+.logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
+.logo-icon{width:32px;height:32px;flex-shrink:0}
+.logo-text{font-family:var(--font-display);font-size:var(--text-base);font-weight:700;
+  color:var(--color-primary)}
+.nav-links{display:flex;align-items:center;gap:var(--space-6);list-style:none}
+.nav-links a{font-size:var(--text-sm);color:var(--color-text-muted);text-decoration:none;
+  transition:color var(--transition)}
+.nav-links a:hover{color:var(--color-primary)}
+.header-actions{display:flex;align-items:center;gap:var(--space-3)}
+.btn-icon{
+  width:36px;height:36px;border-radius:var(--radius-full);
+  display:grid;place-items:center;color:var(--color-text-muted);
+  border:1px solid var(--color-border);
+}
+.btn-icon:hover{color:var(--color-text);background:var(--color-surface-offset)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .logo-text{font-size:var(--text-sm)}
+}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-primary-hover) 60%,#0f3638 100%);
+  color:#fff;padding:clamp(var(--space-10),7vw,var(--space-20)) 0;
+  position:relative;overflow:hidden
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-inner{position:relative;z-index:1}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:var(--space-2);
+  background:oklch(1 0 0 / .12);border:1px solid oklch(1 0 0 / .2);
+  border-radius:var(--radius-full);padding:var(--space-1) var(--space-3);
+  font-size:var(--text-xs);font-weight:500;color:oklch(1 0 0 / .9);
+  margin-bottom:var(--space-4)
+}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;
+  animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(0.8)}}
+.hero h1{
+  font-size:var(--text-2xl);font-weight:700;color:#fff;
+  margin-bottom:var(--space-4);max-width:16ch;line-height:1.1
+}
+.hero-sub{font-size:var(--text-base);color:oklch(1 0 0 / .75);max-width:50ch;margin-bottom:var(--space-8)}
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:var(--space-6);
+  border-top:1px solid oklch(1 0 0 / .15);padding-top:var(--space-6)
+}
+.hero-stat-label{font-size:var(--text-xs);color:oklch(1 0 0 / .6);margin-bottom:var(--space-1)}
+.hero-stat-value{font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;
+  color:#fff;font-variant-numeric:tabular-nums}
+.hero-stat-delta{font-size:var(--text-xs);color:#4ade80;font-weight:500}
+
+/* ── SECTION ── */
+.section{padding:clamp(var(--space-8),6vw,var(--space-16)) 0}
+.section-header{margin-bottom:var(--space-8)}
+.section-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-2)}
+.section-title{font-size:var(--text-xl);font-weight:700;color:var(--color-text);margin-bottom:var(--space-3)}
+.section-desc{font-size:var(--text-base);color:var(--color-text-muted);max-width:60ch}
+
+/* ── KPI CARDS ── */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:var(--space-4)}
+.kpi-card{
+  background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h / .07);
+  border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm)
+}
+.kpi-card-label{font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-2);
+  text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+.kpi-card-value{font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;
+  color:var(--color-text);font-variant-numeric:tabular-nums;margin-bottom:var(--space-1)}
+.kpi-card-sub{font-size:var(--text-xs);color:var(--color-text-muted)}
+.kpi-card--accent{background:var(--color-primary);border-color:var(--color-primary-hover)}
+.kpi-card--accent .kpi-card-label,.kpi-card--accent .kpi-card-sub{color:oklch(1 0 0 / .7)}
+.kpi-card--accent .kpi-card-value{color:#fff}
+.badge-war{
+  display:inline-flex;align-items:center;gap:var(--space-1);
+  background:color-mix(in oklch,var(--color-error) 12%,var(--color-surface));
+  color:var(--color-error);border-radius:var(--radius-full);
+  padding:2px var(--space-2);font-size:var(--text-xs);font-weight:600
+}
+
+/* ── CHART CARDS ── */
+.chart-grid{display:grid;gap:var(--space-6)}
+.chart-grid--2{grid-template-columns:repeat(auto-fill,minmax(min(440px,100%),1fr))}
+.chart-card{
+  background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h / .07);
+  border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm)
+}
+.chart-card-header{margin-bottom:var(--space-4)}
+.chart-card-title{font-size:var(--text-base);font-weight:600;color:var(--color-text)}
+.chart-card-sub{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:var(--space-1)}
+.chart-wrap{position:relative;width:100%}
+
+/* ── DATA TABLE ── */
+.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);
+  border:1px solid oklch(from var(--color-text) l c h / .07);box-shadow:var(--shadow-sm)}
+.data-table{background:var(--color-surface)}
+.data-table th{
+  background:var(--color-surface-offset);font-size:var(--text-xs);font-weight:600;
+  color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.05em;
+  padding:var(--space-3) var(--space-4);text-align:left;border-bottom:1px solid var(--color-divider)
+}
+.data-table td{
+  padding:var(--space-3) var(--space-4);font-size:var(--text-sm);
+  border-bottom:1px solid oklch(from var(--color-text) l c h / .05);
+  font-variant-numeric:tabular-nums
+}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:var(--color-surface-offset)}
+.tag{display:inline-flex;align-items:center;padding:2px var(--space-2);
+  border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:500}
+.tag-war{background:color-mix(in oklch,var(--color-error) 12%,transparent);color:var(--color-error)}
+.tag-peace{background:color-mix(in oklch,var(--color-primary) 12%,transparent);color:var(--color-primary)}
+.price-up{color:var(--color-error);font-weight:600}
+.price-down{color:var(--color-success);font-weight:600}
+.price-neutral{color:var(--color-text-muted)}
+
+/* ── INSIGHT CARDS ── */
+.insight-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:var(--space-4)}
+.insight-card{
+  background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h / .07);
+  border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm)
+}
+.insight-icon{
+  width:44px;height:44px;border-radius:var(--radius-md);
+  background:color-mix(in oklch,var(--color-primary) 12%,var(--color-surface));
+  display:grid;place-items:center;margin-bottom:var(--space-4);
+  color:var(--color-primary)
+}
+.insight-icon svg{width:22px;height:22px}
+.insight-card h3{font-size:var(--text-base);font-weight:600;margin-bottom:var(--space-2)}
+.insight-card p{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;max-width:unset}
+
+/* ── SCENARIO TABLE ── */
+.scenario-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:var(--space-4)}
+.scenario-card{
+  border-radius:var(--radius-lg);padding:var(--space-6);
+  border:1px solid oklch(from var(--color-text) l c h / .07)
+}
+.scenario-card--opt{background:color-mix(in oklch,var(--color-success) 8%,var(--color-surface))}
+.scenario-card--base{background:color-mix(in oklch,var(--color-primary) 8%,var(--color-surface))}
+.scenario-card--pes{background:color-mix(in oklch,var(--color-error) 8%,var(--color-surface))}
+.scenario-badge{
+  font-size:var(--text-xs);font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  margin-bottom:var(--space-3)
+}
+.scenario-card--opt .scenario-badge{color:var(--color-success)}
+.scenario-card--base .scenario-badge{color:var(--color-primary)}
+.scenario-card--pes .scenario-badge{color:var(--color-error)}
+.scenario-price{font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;
+  margin-bottom:var(--space-2);font-variant-numeric:tabular-nums}
+.scenario-card--opt .scenario-price{color:var(--color-success)}
+.scenario-card--base .scenario-price{color:var(--color-primary)}
+.scenario-card--pes .scenario-price{color:var(--color-error)}
+.scenario-cond{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.5}
+
+/* ── FOOTER ── */
+.site-footer{
+  background:var(--color-surface-offset);
+  border-top:1px solid oklch(from var(--color-text) l c h / .07);
+  padding:var(--space-8) 0;margin-top:var(--space-16)
+}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:var(--space-4)}
+.footer-copy{font-size:var(--text-xs);color:var(--color-text-muted)}
+.footer-note{font-size:var(--text-xs);color:var(--color-text-faint)}
+
+/* ── PROGRESS ── */
+.section-progress{display:flex;gap:var(--space-2);margin-bottom:var(--space-12);flex-wrap:wrap}
+.step-item{display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);
+  color:var(--color-text-muted)}
+.step-num{
+  width:22px;height:22px;border-radius:var(--radius-full);
+  background:var(--color-primary-highlight);color:var(--color-primary);
+  font-weight:700;font-size:10px;display:grid;place-items:center;flex-shrink:0
+}
+.step-sep{color:var(--color-text-faint);font-size:10px}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .hero-stats{gap:var(--space-4)}
+  .chart-card{padding:var(--space-4)}
+  .data-table th,.data-table td{padding:var(--space-2) var(--space-3)}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-label="Oil Report Logo">
+          <circle cx="16" cy="16" r="14" fill="currentColor" opacity=".08"/>
+          <path d="M16 6 C16 6 10 12 10 18 C10 21.3 12.7 24 16 24 C19.3 24 22 21.3 22 18 C22 12 16 6 16 6Z" fill="var(--color-primary)" opacity=".9"/>
+          <path d="M16 16 C16 16 13 19 13 21 C13 22.7 14.3 24 16 24 C17.7 24 19 22.7 19 21 C19 19 16 16 16 16Z" fill="var(--color-primary-hover)"/>
+        </svg>
+        <span class="logo-text">Oil Market Report</span>
+      </a>
+      <nav aria-label="페이지 내비게이션">
+        <ul class="nav-links">
+          <li><a href="#overview">개요</a></li>
+          <li><a href="#eda">EDA</a></li>
+          <li><a href="#insights">인사이트</a></li>
+          <li><a href="#outlook">전망</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-icon" data-theme-toggle aria-label="다크모드 전환">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      2026년 3월 기준 — 실시간 데이터 분석
+    </div>
+    <h1>전쟁과 유가 변동<br>데이터 분석 보고서</h1>
+    <p class="hero-sub">1970년부터 2026년까지 57개년 브렌트유 샘플 데이터를 기반으로 전처리·EDA를 수행하고, 전쟁·지정학적 충돌이 유가에 미치는 패턴을 분석한 비즈니스 리포트입니다.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-label">현재 브렌트유</div>
+        <div class="hero-stat-value">$101–104</div>
+        <div class="hero-stat-delta">▲ +42% (전쟁 발발 후)</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">데이터 기간</div>
+        <div class="hero-stat-value">57년</div>
+        <div class="hero-stat-delta">1970 – 2026</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">전쟁/충격 이벤트</div>
+        <div class="hero-stat-value">11개년</div>
+        <div class="hero-stat-delta">6개 주요 분쟁</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">EIA 연평균 전망</div>
+        <div class="hero-stat-value">$79</div>
+        <div class="hero-stat-delta">2026년 전체 기준</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- PIPELINE OVERVIEW -->
+<section class="section" id="overview">
+  <div class="container container--narrow">
+    <div class="section-progress">
+      <div class="step-item"><span class="step-num">1</span>샘플 데이터 생성</div>
+      <span class="step-sep">→</span>
+      <div class="step-item"><span class="step-num">2</span>데이터 전처리</div>
+      <span class="step-sep">→</span>
+      <div class="step-item"><span class="step-num">3</span>EDA 분석</div>
+      <span class="step-sep">→</span>
+      <div class="step-item"><span class="step-num">4</span>시각화</div>
+      <span class="step-sep">→</span>
+      <div class="step-item"><span class="step-num">5</span>비즈니스 보고서</div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-label">기술통계 (Descriptive Statistics)</div>
+      <div class="section-title">샘플 데이터 기초 통계</div>
+      <p class="section-desc">1970–2026년 브렌트유 연평균 가격 57개 관측치에 대한 기초 통계량입니다.</p>
+    </div>
+    <div class="kpi-grid" id="kpi-area"></div>
+  </div>
+</section>
+
+<!-- EDA CHARTS -->
+<section class="section" id="eda" style="background:var(--color-surface-offset)">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">EDA — 탐색적 데이터 분석</div>
+      <div class="section-title">유가 데이터 시각화</div>
+      <p class="section-desc">4개의 차트로 유가의 시계열 추이, 시대별 비교, 전쟁 충격, 분포를 탐색합니다.</p>
+    </div>
+
+    <!-- Chart 1: 전체 추이 -->
+    <div class="chart-card" style="margin-bottom:var(--space-6)">
+      <div class="chart-card-header">
+        <div class="chart-card-title">① 브렌트유 연평균 추이 (1970–2026)</div>
+        <div class="chart-card-sub">빨간 점 = 전쟁/충격 이벤트 연도 | 단위: $/배럴</div>
+      </div>
+      <div class="chart-wrap" style="height:320px">
+        <canvas id="chart-trend"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-grid chart-grid--2">
+      <!-- Chart 2 -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">② 시대별 평균 유가</div>
+          <div class="chart-card-sub">2000년대부터 구조적 고유가 시대 진입</div>
+        </div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="chart-era"></canvas>
+        </div>
+      </div>
+      <!-- Chart 3 -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">③ 주요 전쟁별 유가 상승률</div>
+          <div class="chart-card-sub">분쟁 전 저점 대비 고점 기준 (%)</div>
+        </div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="chart-war"></canvas>
+        </div>
+      </div>
+      <!-- Chart 4 -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">④ 유가 구간별 발생 연수</div>
+          <div class="chart-card-sub">전체 57년 중 저유가 시대가 절반 이상</div>
+        </div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="chart-dist"></canvas>
+        </div>
+      </div>
+      <!-- Chart 5: 전년 대비 변화율 -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">⑤ 전년 대비 유가 변화율 (1971–2026)</div>
+          <div class="chart-card-sub">양수=상승 / 음수=하락 | %</div>
+        </div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="chart-pct"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA TABLE -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">원본 데이터</div>
+      <div class="section-title">전처리된 데이터 테이블</div>
+      <p class="section-desc">전쟁 연도는 붉은 태그로, 큰 폭의 상승/하락은 색상으로 구분됩니다.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table" id="data-table">
+        <thead>
+          <tr>
+            <th>연도</th>
+            <th>브렌트유 ($/배럴)</th>
+            <th>전년 대비 변화율</th>
+            <th>이벤트</th>
+            <th>가격 구간</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="section" id="insights" style="background:var(--color-surface-offset)">
+  <div class="container container--narrow">
+    <div class="section-header">
+      <div class="section-label">핵심 인사이트</div>
+      <div class="section-title">분석에서 도출된 비즈니스 시사점</div>
+    </div>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
+        <h3>전쟁-유가 4단계 사이클</h3>
+        <p>Fear Premium 선행 상승 → 발발 직후 급등 → 단기 종전 시 급락 → 구조적 잔류 효과의 패턴이 1973년 이후 일관되게 반복됩니다.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>호르무즈 해협의 임계성</h3>
+        <p>전 세계 원유·LNG 해상 물동량의 약 20%가 통과하는 이 해협의 봉쇄는 과거 어떤 전쟁보다 직접적인 공급 차질을 유발합니다. JP모건은 18일 후 470만 배럴 감산을 전망했습니다.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3>구조적 공급 과잉이 하방 압력</h3>
+        <p>IEA는 2026년 하루 370만 배럴 초과 공급을 전망합니다. 전쟁 종식 후 이 공급 과잉이 재부각되며 유가는 빠르게 $70대로 조정될 가능성이 높습니다.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <h3>한국 경제의 취약 구조</h3>
+        <p>원유 수입의 70%+ 중동 의존도로 직접 피해가 불가피합니다. 전쟁 발발 후 코스피 18.4% 급락, 원/달러 1,500원 돌파 등 금융시장 충격이 현실화되었습니다.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <h3>상승률 감소 추세</h3>
+        <p>1차 오일쇼크(+252%) → 이란혁명(+135%) → 러·우전쟁(+43%) → 미·이란전쟁(+35%+)로, 충격 강도는 줄고 있습니다. 미국 셰일 오일, SPR 시스템, 산유국 다변화 덕분입니다.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>
+          </svg>
+        </div>
+        <h3>57년 중 저유가 시대 54%</h3>
+        <p>데이터 분석 결과, 전체 57년 중 31년($30 미만)이 저유가 구간입니다. 초고유가(>$90)는 7년에 불과하나 2010년대 이후 집중 — 구조적 고유가화 신호입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTLOOK / SCENARIOS -->
+<section class="section" id="outlook">
+  <div class="container container--narrow">
+    <div class="section-header">
+      <div class="section-label">향후 전망</div>
+      <div class="section-title">3가지 시나리오별 유가 예측</div>
+      <p class="section-desc">EIA, Goldman Sachs, JP모건, Barclays 등 주요 기관 전망을 종합했습니다.</p>
+    </div>
+    <div class="scenario-grid">
+      <div class="scenario-card scenario-card--opt">
+        <div class="scenario-badge">📗 낙관 시나리오</div>
+        <div class="scenario-price">$70–80</div>
+        <p class="scenario-cond"><strong>조건:</strong> 단기 종전, 호르무즈 재개방 시<br><strong>시기:</strong> 2026년 하반기</p>
+      </div>
+      <div class="scenario-card scenario-card--base">
+        <div class="scenario-badge">📘 기본 시나리오 (EIA)</div>
+        <div class="scenario-price">$79 / $64</div>
+        <p class="scenario-cond"><strong>조건:</strong> 2분기 내 종전, 점진적 복구<br><strong>시기:</strong> 2026 연평균 $79 / 2027년 $64</p>
+      </div>
+      <div class="scenario-card scenario-card--pes">
+        <div class="scenario-badge">📕 비관 시나리오</div>
+        <div class="scenario-price">$120–150</div>
+        <p class="scenario-cond"><strong>조건:</strong> 호르무즈 봉쇄 2개월 이상 지속<br><strong>시기:</strong> 단기 급등 후 불안정</p>
+      </div>
+    </div>
+
+    <div style="margin-top:var(--space-8)">
+      <div class="section-label">기관별 전망 비교</div>
+      <div class="table-wrap" style="margin-top:var(--space-4)">
+        <table class="data-table">
+          <thead>
+            <tr><th>기관</th><th>기본 시나리오</th><th>리스크 시나리오</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>EIA</td><td>2026 연평균 $79, 2027 $64</td><td>전쟁 장기화 시 상향</td></tr>
+            <tr><td>골드만삭스</td><td>$56 (전쟁 전 전망, 공급 과잉)</td><td>분쟁 해소 후 $54 하락 가능</td></tr>
+            <tr><td>바클레이스</td><td>$80 상향</td><td>봉쇄 지속 시 $120 초과</td></tr>
+            <tr><td>옥스퍼드 이코노믹스</td><td>봉쇄 1주 지속 시 $140</td><td>러·우 전쟁 고점 수준</td></tr>
+            <tr><td>JP모건</td><td>하반기 $60 정상화</td><td>단기 Fear Premium 후 안정</td></tr>
+            <tr><td>AMP</td><td>전쟁 장기화 시 $150</td><td>현재 대비 약 2배</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Oil Market Analysis Report — 데이터 분석 기반 비즈니스 보고서</p>
+      <p class="footer-note">샘플 데이터 (1970–2026) | 출처: EIA, Reuters, IEA, Goldman Sachs</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── THEME TOGGLE ──
+(function(){
+  const t=document.querySelector('[data-theme-toggle]');
+  const r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t) t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      :'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+
+// ── KPI CARDS ──
+const d = OIL_DATA;
+const kpiArea = document.getElementById('kpi-area');
+const kpis = [
+  {label:'평균 유가',value:`$${d.desc_stats.mean}`,sub:'57개년 기준',accent:false},
+  {label:'중앙값',value:`$${d.desc_stats.median}`,sub:'우측 꼬리 분포 확인',accent:false},
+  {label:'표준편차',value:`$${d.desc_stats.std}`,sub:'높은 변동성',accent:false},
+  {label:'최솟값',value:`$${d.desc_stats.min}`,sub:'1970년 (산업화 이전)',accent:false},
+  {label:'최댓값',value:`$${d.desc_stats.max}`,sub:'2012년 초고유가 정점',accent:false},
+  {label:'현재 유가(3월)',value:'$101–104',sub:'<span class="badge-war">⚠ 미·이란 전쟁</span>',accent:true},
+];
+kpis.forEach(k=>{
+  kpiArea.innerHTML+=`<div class="kpi-card${k.accent?' kpi-card--accent':''}">
+    <div class="kpi-card-label">${k.label}</div>
+    <div class="kpi-card-value">${k.value}</div>
+    <div class="kpi-card-sub">${k.sub}</div>
+  </div>`;
+});
+
+// ── CHART COLORS ──
+const isDark=()=>document.documentElement.getAttribute('data-theme')==='dark';
+const C={
+  primary:'#01696f', primaryLight:'rgba(1,105,111,0.15)',
+  red:'#a13544', redLight:'rgba(161,53,68,0.15)',
+  gold:'#d19900', goldLight:'rgba(209,153,0,0.15)',
+  green:'#437a22', muted:'rgba(122,121,116,0.4)',
+  textColor:()=>isDark()?'#797876':'#7a7974',
+  gridColor:()=>isDark()?'rgba(80,79,77,0.3)':'rgba(200,200,200,0.3)',
+};
+
+const commonOpts = ()=>({
+  responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{labels:{color:C.textColor(),font:{family:"'Noto Sans KR',sans-serif",size:11}}}},
+  scales:{
+    x:{ticks:{color:C.textColor(),font:{size:10}},grid:{color:C.gridColor()}},
+    y:{ticks:{color:C.textColor(),font:{size:10}},grid:{color:C.gridColor()}}
+  }
+});
+
+// Chart 1: 추이
+(function(){
+  const pointColors = d.years.map((_,i)=>d.is_war[i]?C.red:C.primary);
+  const pointRadius = d.years.map((_,i)=>d.is_war[i]?6:2);
+  new Chart(document.getElementById('chart-trend'),{
+    type:'line',
+    data:{
+      labels:d.years,
+      datasets:[
+        {label:'브렌트유 연평균',data:d.prices,
+          borderColor:C.primary,borderWidth:2,
+          backgroundColor:C.primaryLight,fill:true,
+          pointBackgroundColor:pointColors,pointRadius:pointRadius,
+          pointHoverRadius:7,tension:0.3},
+      ]
+    },
+    options:{...commonOpts(),
+      plugins:{
+        legend:{labels:{color:C.textColor(),font:{family:"'Noto Sans KR',sans-serif",size:11}}},
+        tooltip:{callbacks:{
+          label:ctx=>{
+            const yr=d.years[ctx.dataIndex];
+            const ev=d.war_events?.[ctx.dataIndex]||'';
+            return `$${ctx.parsed.y} ${ev&&ev!=='평시'?'('+ev+')':''}`;
+          }
+        }}
+      },
+      scales:{
+        x:{ticks:{color:C.textColor(),font:{size:10},maxTicksLimit:12},
+           grid:{color:C.gridColor()}},
+        y:{ticks:{color:C.textColor(),font:{size:10},callback:v=>`$${v}`},
+           grid:{color:C.gridColor()}}
+      }
+    }
+  });
+})();
+
+// Chart 2: 시대별
+new Chart(document.getElementById('chart-era'),{
+  type:'bar',
+  data:{
+    labels:d.era_labels,
+    datasets:[{label:'평균 유가 ($/배럴)',data:d.era_means,
+      backgroundColor:[C.muted,C.muted,C.muted,C.primaryLight,'rgba(1,105,111,0.6)',C.primary],
+      borderRadius:4}]
+  },
+  options:{...commonOpts(),
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:ctx=>`$${ctx.parsed.y}/배럴`}}},
+    scales:{
+      x:{ticks:{color:C.textColor(),font:{size:10}},grid:{display:false}},
+      y:{ticks:{color:C.textColor(),font:{size:10},callback:v=>`$${v}`},
+         grid:{color:C.gridColor()}}
+    }
+  }
+});
+
+// Chart 3: 전쟁 상승률
+new Chart(document.getElementById('chart-war'),{
+  type:'bar',
+  data:{
+    labels:d.shock_labels,
+    datasets:[{label:'유가 상승률 (%)',data:d.shock_rates,
+      backgroundColor:d.shock_rates.map(r=>r>100?'rgba(161,53,68,0.8)':r>30?'rgba(209,153,0,0.7)':'rgba(1,105,111,0.6)'),
+      borderRadius:4}]
+  },
+  options:{...commonOpts(),
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:ctx=>`+${ctx.parsed.y}%`}}},
+    scales:{
+      x:{ticks:{color:C.textColor(),font:{size:9}},grid:{display:false}},
+      y:{ticks:{color:C.textColor(),font:{size:10},callback:v=>`${v}%`},
+         grid:{color:C.gridColor()}}
+    }
+  }
+});
+
+// Chart 4: 구간 분포 (도넛)
+new Chart(document.getElementById('chart-dist'),{
+  type:'doughnut',
+  data:{
+    labels:d.level_labels,
+    datasets:[{data:d.level_vals,
+      backgroundColor:['rgba(122,121,116,0.5)','rgba(1,105,111,0.5)','rgba(209,153,0,0.7)','rgba(161,53,68,0.8)'],
+      borderWidth:0}]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{position:'bottom',labels:{color:C.textColor(),font:{size:10},padding:8}},
+      tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed}년`}}
+    },
+    cutout:'55%'
+  }
+});
+
+// Chart 5: 변화율 바
+const pctColors = d.pct_change.slice(1).map(v=>v>=0?'rgba(67,122,34,0.7)':'rgba(161,53,68,0.7)');
+new Chart(document.getElementById('chart-pct'),{
+  type:'bar',
+  data:{
+    labels:d.years.slice(1),
+    datasets:[{label:'전년 대비 변화율',data:d.pct_change.slice(1),
+      backgroundColor:pctColors,borderRadius:2}]
+  },
+  options:{...commonOpts(),
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:ctx=>`${ctx.parsed.y>0?'+':''}${ctx.parsed.y.toFixed(1)}%`}}},
+    scales:{
+      x:{ticks:{color:C.textColor(),font:{size:9},maxTicksLimit:10},grid:{display:false}},
+      y:{ticks:{color:C.textColor(),font:{size:10},callback:v=>`${v}%`},
+         grid:{color:C.gridColor()}}
+    }
+  }
+});
+
+// ── DATA TABLE ──
+const tbody = document.getElementById('table-body');
+for(let i=d.years.length-1;i>=0;i--){
+  const yr=d.years[i], pr=d.prices[i], pc=d.pct_change[i];
+  const ev=d.war_events[i]||'평시';
+  const isWar=d.is_war[i];
+  const evTag=isWar&&ev!=='평시'?`<span class="tag tag-war">${ev}</span>`:`<span class="tag tag-peace">평시</span>`;
+  const pcClass=pc>15?'price-up':pc<-15?'price-down':'price-neutral';
+  const pcStr=pc===0?'—':`${pc>0?'+':''}${pc.toFixed(1)}%`;
+  const pl=d.prices[i]>90?'초고유가 (>$90)':d.prices[i]>60?'고유가 ($60-90)':d.prices[i]>30?'중유가 ($30-60)':'저유가 (<$30)';
+  tbody.innerHTML+=`<tr>
+    <td><strong>${yr}</strong></td>
+    <td>$${pr}</td>
+    <td class="${pcClass}">${pcStr}</td>
+    <td>${evTag}</td>
+    <td>${pl}</td>
+  </tr>`;
+}
+</script>
+</body>
+</html>
